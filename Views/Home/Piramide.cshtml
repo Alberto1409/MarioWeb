@@ -1,13 +1,30 @@
 ﻿@model int
 
-
-
+ @{
+           var J=0;
+           var A=Model-1; 
+        }
+<style>
+    .fanton{
+        width:50px;
+        height:50px;
+        background:white;
+    }
+</style>
     @for (int i = 0 ; i < Model ; i++)
     {
-         <img  src="~/images/bloque.webp" alt="#">
+        @for(int R=0;R<A-J;R++){
+            <img class="fanton">
+        }
+        J++;
+        for(int K=0;K<J;K++){
+            <img  src="~/images/bloque.webp" alt="#">
+        }
+        <div></div> 
     }
 
     <br/>
+
 
 
            
