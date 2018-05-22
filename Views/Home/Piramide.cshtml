@@ -1,7 +1,7 @@
 ﻿@model int
 @{
         int ball=Model-1;
-        int ss=0;
+        int ss=0,bb=ball;
         int ff=ball;
 }
 
@@ -15,6 +15,10 @@
          <img  src="~/images/bloque.webp" alt="#">
     }
     ff--;
+    @for (int h=0; h < Model-bb ; h++){
+       <img  src="~/images/bloque.webp" alt="#">
+    }
+    bb--;
     <div></div>
     }
     <br/>
